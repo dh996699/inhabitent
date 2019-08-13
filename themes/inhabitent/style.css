@@ -311,10 +311,10 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Merriweather Web";
   font-size: 16px;
   font-size: 1rem;
-  line-height: 1.5; }
+  line-height: 1.75; }
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
@@ -360,11 +360,18 @@ mark, ins {
 big {
   font-size: 125%; }
 
+.main-navigation {
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: 'Novecento Sans Web';
+  font-weight: normal;
+  font-style: normal; }
+
 body {
   font-size: 16px;
   color: #404040;
   line-height: 1.75;
-  font-family: 'Merriweather Web';
+  font-family: "Merriweather Web";
   font-weight: normal;
   font-style: normal; }
 
@@ -432,11 +439,6 @@ img {
 table {
   margin: 0 0 1.5rem;
   width: 100%; }
-
-#secondary {
-  float: right;
-  padding-top: 0;
-  width: 50%; }
 
 /*--------------------------------------------------------------
 # Forms
@@ -521,14 +523,53 @@ a {
     outline: 0; }
 
 /* Menus */
+.site-branding-container {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.logo {
+  width: 50px;
+  height: 35px; }
+
+.menu-main-menu-container {
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 0; }
+
 .main-navigation {
   clear: both;
-  display: block;
-  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%; }
   .main-navigation ul {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     list-style: none;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     margin: 0;
     padding-left: 0; }
     .main-navigation ul ul {
@@ -552,7 +593,8 @@ a {
       left: auto; }
   .main-navigation li {
     float: left;
-    position: relative; }
+    position: relative;
+    padding-left: 25px; }
   .main-navigation a {
     display: block;
     text-decoration: none; }
@@ -695,6 +737,9 @@ a {
 
 .bypostauthor {
   display: block; }
+
+html {
+  width: 1120px; }
 
 /*--------------------------------------------------------------
 # Media

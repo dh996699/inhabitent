@@ -67,11 +67,20 @@ big {
 	font-size: 125%;
 }
 
+.main-navigation {
+	font-size: 1rem;
+	text-decoration: none;
+	font-family: 'Novecento Sans Web';
+	font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
     font-size: 16px;
     color:#404040;
-    line-height: 1.75;
-    font-family: 'Merriweather Web';
+	line-height: $font__line-height-body;
+    font-family: $font__main;
     font-weight: normal;
     font-style: normal;
 }
