@@ -36,6 +36,24 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+		<!-- custom query -->
+
+		<?php $custom_query = new WP_Query('cat=-1');
+while($custom_query->have_posts()) : $custom_query->the_post(); ?>
+
+	<div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+		<?php the_content(); ?>
+	</div>
+
+<?php endwhile; ?>
+<?php wp_reset_postdata(); // reset the query ?>
+
+
+
+
+		<!-- custom query end -->
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

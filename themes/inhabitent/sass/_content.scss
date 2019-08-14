@@ -57,12 +57,14 @@ body {
 	min-height: 100%;
 }
 
+// Footer configuration *** Start
+
 footer {
 
 	width: auto;
 	background: url(../../images/dark-wood.png);
 	// background-size: 512px 512px;
-	height: 420px;
+	height: 335px;
 	color: #fff;
 }
 
@@ -126,7 +128,7 @@ footer {
 	grid-row-start: 4;
   grid-row-end: 6;
 	text-align: center;
-	padding-top: 100px;
+	padding-top: 30px;
 }
 
 .copy-right span {
@@ -143,11 +145,21 @@ footer {
 
 .footer-content {
 	display:grid;
-	grid-template-columns: repeat(5, 12%, 25%, 25%, 25%, 12%);
+	grid-template-columns: repeat(5, 25%, 15%, 15%, 20%, 25%);
 	grid-template-rows: auto;
 	grid-template-areas:
 	"test contact  hours footer-logo footer-logo"
 	"copyright copyright copyright copyright copyright";
 	margin-bottom:0px;
 	padding:0px;
+}
+
+// Footer configuration *** End
+
+#secondary {
+	float: right;
+	margin-left: -100%;
+	max-width: 413px;
+	position: relative;
+	width: 29.4118%;
 }
