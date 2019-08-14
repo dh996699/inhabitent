@@ -49,5 +49,105 @@
 }
 
 html {
-	width: 1120px;
+	width: auto;
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+}
+
+footer {
+
+	width: auto;
+	background: url(../../images/dark-wood.png);
+	// background-size: 512px 512px;
+	height: 420px;
+	color: #fff;
+}
+
+
+.footer-content ul {
+	list-style-type: none;
+}
+
+.social-media ul span {
+	display:none;
+}
+
+.business-hours ul span {
+	font-weight: bold;
+}
+.contact-info {
+	grid-area: contact;
+	text-align: left;
+	padding-top: 50px;
+}
+
+.contact-info ul {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+.contact-info li {
+	margin-top: 20px;
+}
+
+.social-media ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.social-media li {
+	padding: 5px;
+	margin-top: 20px;
+
+}
+
+.business-hours {
+	grid-area: hours;
+	padding-top: 50px;
+}
+
+.business-hours ul {
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+
+.business-hours li {
+	margin-top: 20px;
+}
+
+.copy-right {
+	grid-area: copyright;
+	grid-row-start: 4;
+  grid-row-end: 6;
+	text-align: center;
+	padding-top: 100px;
+}
+
+.copy-right span {
+	text-transform: uppercase;
+}
+
+.footer-logo {
+	grid-area: footer-logo;
+	object-fit: cover;
+	text-align: center;
+	padding-top: 50px;
+}
+
+
+.footer-content {
+	display:grid;
+	grid-template-columns: repeat(5, 12%, 25%, 25%, 25%, 12%);
+	grid-template-rows: auto;
+	grid-template-areas:
+	"test contact  hours footer-logo footer-logo"
+	"copyright copyright copyright copyright copyright";
+	margin-bottom:0px;
+	padding:0px;
 }
