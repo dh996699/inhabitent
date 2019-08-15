@@ -52,14 +52,12 @@ while($custom_query->have_posts()) : $custom_query->the_post(); ?>
     // echo '<pre>' . var_dump( $term ) . '</pre>';
 
     $icon = get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg'; }?>
-    // var_dump( file_exists( $icon ) );
-    // var_dump( $icon );
 
 <div class="front-page-shop-item">
 
     <?php echo '<img src="' . $icon . '" />'; ?>
     <p> <?php echo $term->description; ?> </p>
-    <button class=front-page-do href="<?php echo $term->get_term_link;?>"> <?php echo $term->name; ?> </button>
+    <button class=front-page-do href="<?php echo $term->get_term_link;?>"> <span> <?php echo $term->name; echo ' Stuff'?> </span> </button>
 
 </div>
 

@@ -61,10 +61,10 @@ body {
 
 footer {
 
-	width: auto;
+	width: 100%;
 	background: url(../../images/dark-wood.png);
 	// background-size: 512px 512px;
-	height: 335px;
+	height: 40vh;
 	color: #fff;
 }
 
@@ -156,10 +156,23 @@ footer {
 
 // Footer configuration *** End
 
+// Sidebar configuration
+
 #secondary {
-	float: right;
-	margin-left: -100%;
-	max-width: 413px;
-	position: relative;
-	width: 29.4118%;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+
+
+
+
+// Sidebar configuration *** End
+
+.page-container {
+margin: auto;
+width: 1120px;
+
 }
