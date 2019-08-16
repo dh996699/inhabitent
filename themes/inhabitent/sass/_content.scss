@@ -32,6 +32,15 @@
 	margin: 0 0 $base__space-unit;
 }
 
+//front-page
+
+.fp-term-link span {
+	color: black;
+}
+
+
+
+
 /* Asides */
 
 .blog .format-aside .entry-title,
@@ -158,11 +167,57 @@ footer {
 
 // Sidebar configuration
 
-#secondary {
+// main container
+.site-content {
 	display: flex;
-	justify-content: flex-end;
-	flex-direction: column;
-	align-items: flex-end;
+	line-height: 1.8rem;
+	
+}
+
+// child of .site-content
+.content-area {
+	flex-grow: 1;
+	width: 75%;
+}
+
+// child of .site-content
+.widget-area {
+	width: 25%;
+	justify-content: center;
+	align-items: center;
+	padding: 42px 0px 0px 30px;
+	line-height: 1.8rem;
+
+}
+
+.sidebar-contact li {
+	margin-left: 5px;
+	line-height: 1.8rem;
+}
+
+
+.widget-area ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.day-of-week {
+	font-weight: bold;
+}
+
+.widget a{
+	color: #248a83;
+    text-decoration: none;
+}
+
+.widget a:hover{
+	color: black;
+    text-decoration: none;
+}
+
+.widget {
+	display: inline-block;
 }
 
 
@@ -171,8 +226,33 @@ footer {
 
 // Sidebar configuration *** End
 
+
+// container of the whole site to control the width
+
 .page-container {
 margin: auto;
 width: 1120px;
 
 }
+
+
+.entry-content h2 {
+	text-align: center;
+	
+}
+
+.entry-content {
+	margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}
+
+// .entry-title {
+// 	color:white;
+// 	position: top;
+// }
+
+// .entry-header {
+// height: 100vh;
+
+// }

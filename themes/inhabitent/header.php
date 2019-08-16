@@ -18,12 +18,59 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
+			<header id="masthead" 
+					class="site-header <?php 
+					if(is_front_page()){ 
+						echo 'a';
+					};
+					if( is_page_template('page-about.php')){
+						echo 'a';
+					};
+					if( is_archive('archive-product.php')){
+						echo 'green-header';
+					};
+
+					if( is_home()){
+						echo 'green-header';
+					};
+
+					if( is_page('find-us')){
+						echo 'green-header';
+					};
+
+					?>" 
+					role="banner">
 			<div class="site-branding-container">
-				<div class="site-branding">
+				<div class="site-branding <?php
+					if(is_front_page()){ 
+						echo 'logo';
+					};
+
+					if( is_page_template('page-about.php')){
+						echo 'logo';
+					};
+
+					if( is_archive('archive-product.php')){
+						echo 'logo-green';
+					};
+
+					if( is_home()){
+						echo 'logo-green';
+					};
+
+					if( is_page('find-us')){
+						echo 'logo-green';
+					};
+
+
+				?>">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg'; ?>" class="logo" alt="inhabitent logo tent green " />
+						<img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg'; ?>" class="logo-green" alt="inhabitent logo tent green " />
+					</a>	
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg'; ?>" class="logo" alt="inhabitent logo tent" />
 					</a>
+
 					
 				</div><!-- .site-branding -->
 
@@ -36,3 +83,7 @@
 			</header><!-- #masthead -->
 			<div class="page-container">
 			<div id="content" class="site-content">
+
+
+			<!-- <div id="sidebar" 
+			class="<?php if (is_page('find-us')) : ?>logo<?php else : ?>logo-green<?php endif; ?>"> -->

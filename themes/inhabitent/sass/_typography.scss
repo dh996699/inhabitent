@@ -17,6 +17,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
+	font-family:'Novecento Sans Web';
 }
 
 /* Copy */
@@ -94,6 +95,11 @@ body {
 	color: white;
 }
 
+.contact-info i {
+	color: white;
+	font-size: 20px;
+}
+
 .contact-info h3 {
 	color: #d99054;
 	font-family: 'Novecento Sans Web';
@@ -119,4 +125,48 @@ body {
 	font-family: 'Novecento Sans Web';
 }
 
+// Find Us Page
 
+.entry-title {
+
+	font-family:'Novecento Sans Web';
+	font-size: 40px;
+
+}
+
+.entry-content h2 {
+	font-family:'Novecento Sans Web';
+	font-size: 35px;
+	color: #2f1339;
+}
+
+.wpcf7-form {
+	color:#2f1339;
+	font-family: 'Novecento Sans Web';
+	font-size:18px;
+	margin: 0 9px;
+	
+}
+
+#form7-submit {
+	font-family: 'Novecento Sans Web';
+	background: #248a83;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	border: none;
+  	padding: 12px 24px;
+  	text-align: center;
+	  font-size: 14px;
+	  border-radius: 0;
+	line-height: 1;
+}
+
+#form7-submit:hover {
+	background-image:none;
+	background: #19625d;
+}
+
+.wpcf7 span {
+	color:red;
+}

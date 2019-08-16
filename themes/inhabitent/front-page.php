@@ -20,10 +20,39 @@ get_header(); ?>
             
 		<!-- custom query -->
 
+        <section class="front-page-shop">
+
+<h2> Shop Stuff </h2>
+
+<?php $arg = [ 
+'taxonomy' => 'product-type',
+'hide_empty' => true,
+];?>
+<?php $terms =  get_terms ($arg); ?>
+
+<?php foreach ( $terms as $term ) :
+    // echo '<pre>' . var_dump( $term ) . '</pre>';
+
+    $icon = get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg';?>
+    <div class="front-page-shop-item">
+        <?php echo '<img src="' . $icon . '" />'; ?>
+        <p> <?php echo $term->description; ?> </p>
+        <a class="fp-term-link" href="<?php echo get_term_link($term);?>"> 
+            <span> <?php echo $term->name; echo ' Stuff'?> </span>
+        </a>
+    </div>
+<?php endforeach; ?>
+
+
+
+
+</section>
+
+
 		<?php $custom_query = new WP_Query('posts_per_page=3');
 while($custom_query->have_posts()) : $custom_query->the_post(); ?>
 
-    <div <?php post_class(); ?> id="post-<?php the_ID(); ?>">
+    <div class="<?php post_class(); ?> id="post-<?php the_ID(); ?>">
         <img src=<?php the_post_thumbnail()?>
         <p><?php 
             the_date(); 
@@ -38,31 +67,7 @@ while($custom_query->have_posts()) : $custom_query->the_post(); ?>
 <?php endwhile; ?>
 <?php wp_reset_postdata(); // reset the query ?>
 
-<section class="front-page-shop">
 
-<h2> Shop Stuff </h2>
-
-<?php $arg = [ 
-'taxonomy' => 'product-type',
-'hide_empty' => true,
-];?>
-<?php $terms =  get_terms ($arg); ?>
-
-<?php foreach ( $terms as $term ) {
-    // echo '<pre>' . var_dump( $term ) . '</pre>';
-
-    $icon = get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg'; }?>
-
-<div class="front-page-shop-item">
-
-    <?php echo '<img src="' . $icon . '" />'; ?>
-    <p> <?php echo $term->description; ?> </p>
-    <button class=front-page-do href="<?php echo $term->get_term_link;?>"> <span> <?php echo $term->name; echo ' Stuff'?> </span> </button>
-
-</div>
-
-?>
-</section>
 		<!-- custom query end -->
 
 
@@ -70,5 +75,5 @@ while($custom_query->have_posts()) : $custom_query->the_post(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>

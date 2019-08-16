@@ -18,8 +18,8 @@
                 <div class="contact-info">
 					<h3> Contact Info </h3>
 					<ul>
-					<li><a href='mailto:info@inhabitent.com'>info@inhabitent.com</a></li>
- 						<li>778-456-7891</li>
+					<li><i class="fas fa-envelope"></i><a href='mailto:info@inhabitent.com'> info@inhabitent.com</a></li>
+ 						<li><i class="fas fa-phone-alt"></i></i> 778-456-7891</li>
 					</ul>
 				
 				<div class="social-media">
