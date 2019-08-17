@@ -17,6 +17,8 @@ get_header(); ?>
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
+
+				<div class="separation-line"> </div>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
@@ -35,7 +37,7 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-
+		<a class="read-more" href="<?php echo get_permalink();?>"> Read More ⟶</a>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

@@ -495,17 +495,50 @@ width: 1120px;
 
 			color: #2f1339;
 			font-size: 2rem;
+		}
 
 
-			comment-reply-title {
+		.comment-reply-title {
 				color: #2f1339;
-				font-size: 10rem;
-
-			}
+				font-size: 2rem;
 
 		}
 
-	}
+		.comment-body {
+				display: flex;
+				border-bottom: 1px solid #e1e1e1;
+				padding-bottom: 5px;
+				justify-content: flex-start;
+				align-items: flex-start;
+
+
+			}
+
+		.comment-content {
+			padding-left: 30px;
+			padding-bottom: 10px;
+		}
+		
+		.comment article {
+			padding-bottom: 2rem;
+		}
+		
+		.comment-author-avatar img {
+			border-radius: 50%;
+			padding-top: 15px;
+		}
+
+		.fn {
+
+			font-style: normal;
+			font-weight: 700;
+		}
+
+		.comment-metadata {
+			color: gray;
+		}
+
+		}
 
 
 
@@ -513,22 +546,114 @@ width: 1120px;
 
 // Journal page-single configuration end
 
+// Journal tag page configuration start
+
+		.tag, .category {
+
+			.site-header {
+				border-bottom: 1px solid #e1e1e1;
+	
+			}
+			.content-area {
+	
+				border-right: 1px solid #e1e1e1;
+				padding: 50px 60px 50px 0;
+				width: 73%;
+			}
+
+			.entry-title {
+				background-color: #248a83;
+				color: #fff;
+				font-size: 35px;
+				left: 0;
+				top: 0;
+				padding: 10px;
+				position: absolute;
+				margin-top: 2rem;
+				max-width: 70%;
+				display: block;
+				line-height: 3rem;
+				
+			}
+	
+			.entry-header {
+	
+				line-height: 2rem;
+				position: relative;
+			}
+
+			.entry-header img {
+
+				width:100%;
+			}
+	
+			.entry-meta {
+				background-color: #248a83;
+				bottom: 0;
+				right: 0;
+				margin-bottom: .7rem;
+				color: #fff;
+				display: inline-block;
+				font-family: Novecento Sans Web,sans-serif;
+				padding: .1rem;
+				position: absolute;
+				text-transform: uppercase;
+			}
+	
+			p { 
+				margin-bottom: 2rem;
+			}
+	
+			.read-more {
+				background-color: transparent;
+				color: black;
+				border: 1px solid #000;
+				font-family: Novecento Sans Web,sans-serif;
+				font-size: 15px;
+				line-height: 1;
+				padding: .75rem 1.5rem;
+				text-decoration: none;
+				text-transform: uppercase;
+				border-radius: 1;
+				margin-bottom: 6rem;
+				
+			}
+	
+			.read-more:hover {
+				color:white;
+				background-color: #248a83;
+			}
+
+			.page-title {
+				font-size: 2.5rem;
+				margin-bottom: .5rem;
+				font-family: Novecento Sans Web,sans-serif;
+			}
+
+
+			.separation-line {
+
+				border-bottom: 1px solid #e1e1e1;
+				margin-bottom: 3rem;
+				padding-bottom: 1rem;
+			}
+
+
+		}
+
+
+// Journal tag page configuration end
+
+
+
+
+
+
+
 //  find us configuration start
 
-	.page-find-us {
 
-		.site-header {
-			border-bottom: 1px solid #e1e1e1;
 
-		}
-		.content-area {
-
-			border-right: 1px solid #e1e1e1;
-    		padding: 50px 60px 50px 0;
-    		width: 73%;
-		}
-
-	}
 
 
 //  find us configuration end

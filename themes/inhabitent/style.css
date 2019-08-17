@@ -1117,17 +1117,111 @@ footer {
 .single-post .comments-title {
   color: #2f1339;
   font-size: 2rem; }
-  .single-post .comments-title comment-reply-title {
-    color: #2f1339;
-    font-size: 10rem; }
 
-.page-find-us .site-header {
+.single-post .comment-reply-title {
+  color: #2f1339;
+  font-size: 2rem; }
+
+.single-post .comment-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 5px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.single-post .comment-content {
+  padding-left: 30px;
+  padding-bottom: 10px; }
+
+.single-post .comment article {
+  padding-bottom: 2rem; }
+
+.single-post .comment-author-avatar img {
+  border-radius: 50%;
+  padding-top: 15px; }
+
+.single-post .fn {
+  font-style: normal;
+  font-weight: 700; }
+
+.single-post .comment-metadata {
+  color: gray; }
+
+.tag .site-header, .category .site-header {
   border-bottom: 1px solid #e1e1e1; }
 
-.page-find-us .content-area {
+.tag .content-area, .category .content-area {
   border-right: 1px solid #e1e1e1;
   padding: 50px 60px 50px 0;
   width: 73%; }
+
+.tag .entry-title, .category .entry-title {
+  background-color: #248a83;
+  color: #fff;
+  font-size: 35px;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  position: absolute;
+  margin-top: 2rem;
+  max-width: 70%;
+  display: block;
+  line-height: 3rem; }
+
+.tag .entry-header, .category .entry-header {
+  line-height: 2rem;
+  position: relative; }
+
+.tag .entry-header img, .category .entry-header img {
+  width: 100%; }
+
+.tag .entry-meta, .category .entry-meta {
+  background-color: #248a83;
+  bottom: 0;
+  right: 0;
+  margin-bottom: .7rem;
+  color: #fff;
+  display: inline-block;
+  font-family: Novecento Sans Web,sans-serif;
+  padding: .1rem;
+  position: absolute;
+  text-transform: uppercase; }
+
+.tag p, .category p {
+  margin-bottom: 2rem; }
+
+.tag .read-more, .category .read-more {
+  background-color: transparent;
+  color: black;
+  border: 1px solid #000;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 1;
+  margin-bottom: 6rem; }
+
+.tag .read-more:hover, .category .read-more:hover {
+  color: white;
+  background-color: #248a83; }
+
+.tag .page-title, .category .page-title {
+  font-size: 2.5rem;
+  margin-bottom: .5rem;
+  font-family: Novecento Sans Web,sans-serif; }
+
+.tag .separation-line, .category .separation-line {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 3rem;
+  padding-bottom: 1rem; }
 
 /*--------------------------------------------------------------
 # Media
