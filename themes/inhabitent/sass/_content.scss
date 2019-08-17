@@ -393,12 +393,143 @@ width: 1120px;
 			color:white;
 			background-color: #248a83;
 		}
-		
-
 }
 
-
-
-
-
 // Journal page configuration end
+
+
+
+// Journal page-single configuration start
+
+	.single-post {
+			
+		.site-header {
+			border-bottom: 1px solid #e1e1e1;
+
+		}
+		.content-area {
+
+			border-right: 1px solid #e1e1e1;
+    		padding: 50px 60px 50px 0;
+    		width: 73%;
+		}
+
+
+		.entry-title {
+			background-color: #248a83;
+			color: #fff;
+			font-size: 35px;
+			left: 0;
+			top: 0;
+			padding: 10px;
+			position: absolute;
+			margin-top: 2rem;
+			max-width: 70%;
+			display: block;
+			line-height: 3rem;
+			
+		}
+
+		.entry-header {
+			
+			line-height: 2rem;
+			position: relative;
+			
+		}
+
+		.entry-header img {
+			width: 100%;
+		}
+
+		.entry-meta {
+			background-color: #248a83;
+			bottom: 0;
+			right: 0;
+			margin-bottom: .7rem;
+			padding-right: 1rem;
+			color: #fff;
+			display: inline-block;
+			font-family: Novecento Sans Web,sans-serif;
+			padding: .1rem;
+			position: absolute;
+			text-transform: uppercase;
+		}
+
+		.comments-link a {
+			color:white;
+
+		}
+
+		p { 
+			margin-bottom: 2rem;
+		}
+
+		.entry-footer {
+				background: none;
+				padding:0;
+				margin:0;
+				color: black;
+				height: 5vh;
+
+		}
+
+		a {
+			color: #248a83;
+    		text-decoration: none;
+
+		}
+
+		.cat-links {
+			margin-right:2rem;
+			text-transform: uppercase;
+			font-family: Novecento Sans Web,sans-serif;
+		}
+
+		.tags-links {
+
+			text-transform: uppercase;
+			font-family: Novecento Sans Web,sans-serif;
+			
+		}
+		.comments-title {
+
+			color: #2f1339;
+			font-size: 2rem;
+
+
+			comment-reply-title {
+				color: #2f1339;
+				font-size: 10rem;
+
+			}
+
+		}
+
+	}
+
+
+
+
+
+// Journal page-single configuration end
+
+//  find us configuration start
+
+	.page-find-us {
+
+		.site-header {
+			border-bottom: 1px solid #e1e1e1;
+
+		}
+		.content-area {
+
+			border-right: 1px solid #e1e1e1;
+    		padding: 50px 60px 50px 0;
+    		width: 73%;
+		}
+
+	}
+
+
+//  find us configuration end
+

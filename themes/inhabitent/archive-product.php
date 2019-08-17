@@ -57,5 +57,4 @@ while($custom_query->have_posts()) : $custom_query->the_post(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
