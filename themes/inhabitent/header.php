@@ -38,37 +38,44 @@
 						echo 'green-header';
 					};
 
+					if( is_single('')){
+						echo 'green-header';
+					};
+
 					?>" 
 					role="banner">
 			<div class="site-branding-container">
-				<div class="site-branding <?php
+				<?php
+					$logoClass = '';
+					
 					if(is_front_page()){ 
-						echo 'logo';
+						$logoClass = 'logo';
 					};
 
 					if( is_page_template('page-about.php')){
-						echo 'logo';
+						$logoClass = 'logo';
 					};
 
 					if( is_archive('archive-product.php')){
-						echo 'logo-green';
+						$logoClass = 'logo-green';
 					};
 
 					if( is_home()){
-						echo 'logo-green';
+						$logoClass = 'logo-green';
 					};
 
 					if( is_page('find-us')){
-						echo 'logo-green';
+						$logoClass = 'logo-green';
 					};
 
-
-				?>">
+					if( is_single('')){
+						$logoClass = 'logo-green';
+					};
+				?>
+				<div class="site-branding <?php echo $logoClass; ?>">
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg'; ?>" class="logo-green" alt="inhabitent logo tent green " />
-					</a>	
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg'; ?>" class="logo" alt="inhabitent logo tent" />
+						<img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent.svg'; ?>" class="logo-green-img" alt="inhabitent logo tent green " />
+						<img src="<?php echo get_template_directory_uri() . '/images/logos/inhabitent-logo-tent-white.svg'; ?>" class="logo-img" alt="inhabitent logo tent" />
 					</a>
 
 					

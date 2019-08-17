@@ -510,7 +510,6 @@ a {
   text-decoration: none; }
 
 #primary {
-  border-right: 1px solid #e1e1e1;
   padding-right: 2%; }
 
 /*--------------------------------------------------------------
@@ -607,9 +606,6 @@ a {
     outline: 0; }
 
 /* Menus */
-.site-header {
-  border-bottom: 1px solid #e1e1e1; }
-
 .front-banner {
   width: 100%;
   height: 100vh;
@@ -626,25 +622,32 @@ a {
   grid-template-areas: "a b c d e f f f f";
   padding: 10px 0px 0px 0px; }
 
-.logo {
+.logo-green-img,
+.logo-img {
+  display: none; }
+
+.logo-green .logo-green-img {
+  display: block; }
+
+.logo .logo-img {
+  display: block; }
+
+.logo-img {
   width: 80px;
   height: 35px;
   position: relative;
   top: 0;
   left: 0; }
 
-.logo-green {
+.logo-green-img {
   width: 80px;
-  height: 35px;
-  position: absolute;
-  top: 20px;
-  left: 131px; }
+  height: 35px; }
 
 .site-branding {
-  grid-area: a;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  grid-area: a; }
 
 .menu-main-menu-container {
   width: 95%;
@@ -988,10 +991,61 @@ footer {
 .entry-content h2 {
   text-align: center; }
 
-.entry-content {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 900px; }
+.blog .site-header {
+  border-bottom: 1px solid #e1e1e1; }
+
+.blog .content-area {
+  border-right: 1px solid #e1e1e1;
+  padding: 50px 60px 50px 0;
+  width: 73%; }
+
+.blog .journal-title {
+  background-color: #248a83;
+  color: #fff;
+  font-size: 35px;
+  left: 0;
+  top: 0;
+  padding: 10px;
+  position: absolute;
+  margin-top: 2rem;
+  max-width: 70%;
+  display: block;
+  line-height: 3rem; }
+
+.blog .journal-header {
+  position: relative; }
+
+.blog .journal-meta {
+  background-color: #248a83;
+  bottom: 0;
+  right: 0;
+  margin-bottom: .7rem;
+  color: #fff;
+  display: inline-block;
+  font-family: Novecento Sans Web,sans-serif;
+  padding: .1rem;
+  position: absolute;
+  text-transform: uppercase; }
+
+.blog p {
+  margin-bottom: 2rem; }
+
+.blog .read-more {
+  background-color: transparent;
+  color: black;
+  border: 1px solid #000;
+  font-family: Novecento Sans Web,sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  padding: .75rem 1.5rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 1;
+  margin-bottom: 6rem; }
+
+.blog .read-more:hover {
+  color: white;
+  background-color: #248a83; }
 
 /*--------------------------------------------------------------
 # Media

@@ -24,7 +24,8 @@ get_header(); ?>
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="journal-header">
 		<?php if ( has_post_thumbnail() ) : ?>
-			<?php the_post_thumbnail( 'large' ); ?>
+			<?php the_post_thumbnail( 'small' );
+			?>
 		<?php endif; ?>
 
 		<?php the_title( sprintf( '<h2 class="journal-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
@@ -38,7 +39,10 @@ get_header(); ?>
 
 	<div class="journal-body">
 		<?php the_excerpt(); ?>
+		<a class="read-more" href="<?php echo get_permalink();?>"> Read More ⟶</a>
 	</div><!-- .entry-content -->
+	<div class="continue-read">
+</div>
 </article><!-- #post-## -->
 
 			<?php endwhile; ?>
