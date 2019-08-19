@@ -6,7 +6,8 @@
  */
 
 get_header(); ?>
-<!-- <div class=front-banner> <div> -->
+<section class="front-page-container">
+<div class="front-banner"> </div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -19,52 +20,50 @@ get_header(); ?>
             <?php endwhile; // End of the loop. ?>
             
 		<!-- custom query -->
+        
+                <h2> Shop Stuff </h2>
+                <section class="front-page-shop">
+                <?php $arg = [ 
+                'taxonomy' => 'product-type',
+                'hide_empty' => true,
+                ];?>
+                <?php $terms =  get_terms ($arg); ?>
+                
+                <?php foreach ( $terms as $term ) :
+                    // echo '<pre>' . var_dump( $term ) . '</pre>';
+                    echo '<div class="front-page-shop-item">';
+                    $icon = get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg';?>
+                        <?php echo '<img class="fp-term-img" src="' . $icon . '" />'; ?>
+                        <p class="fp-term-desc"> <?php echo $term->description; ?> </p>
+                        <a class="fp-term-link" href="<?php echo get_term_link($term);?>"> 
+                            <span class="fp-term-name"> <?php echo $term->name; echo ' Stuff'?> </span>
+                        </a>
+                    </div>
+                <?php endforeach; ?>
+                
+        </section>
 
-        <section class="front-page-shop">
+        <section class="front-page-journal">
+                    
+        <h2> Inhabitent Journal </h2>
 
-<h2> Shop Stuff </h2>
+                        <?php $custom_query = new WP_Query('posts_per_page=3');
+                while($custom_query->have_posts()) : $custom_query->the_post(); ?>
 
-<?php $arg = [ 
-'taxonomy' => 'product-type',
-'hide_empty' => true,
-];?>
-<?php $terms =  get_terms ($arg); ?>
+                    <div class="<?php post_class(); ?> id="post-<?php the_ID(); ?>">
+                        <img src=<?php the_post_thumbnail()?>
+                        <p><?php 
+                            the_date(); 
+                            echo ' / ';
+                            echo get_comments_number();
+                            echo ' comments';
+                            ?></p>
+                        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                        <?php the_content(); ?>
+                    </div>
 
-<?php foreach ( $terms as $term ) :
-    // echo '<pre>' . var_dump( $term ) . '</pre>';
-
-    $icon = get_template_directory_uri() . '/images/product-type-icons/' . $term->slug . '.svg';?>
-    <div class="front-page-shop-item">
-        <?php echo '<img src="' . $icon . '" />'; ?>
-        <p> <?php echo $term->description; ?> </p>
-        <a class="fp-term-link" href="<?php echo get_term_link($term);?>"> 
-            <span> <?php echo $term->name; echo ' Stuff'?> </span>
-        </a>
-    </div>
-<?php endforeach; ?>
-
-
-
-
-</section>
-
-
-		<?php $custom_query = new WP_Query('posts_per_page=3');
-while($custom_query->have_posts()) : $custom_query->the_post(); ?>
-
-    <div class="<?php post_class(); ?> id="post-<?php the_ID(); ?>">
-        <img src=<?php the_post_thumbnail()?>
-        <p><?php 
-            the_date(); 
-            echo ' / ';
-            echo get_comments_number();
-            echo ' comments';
-             ?></p>
-		<h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-		<?php the_content(); ?>
-	</div>
-
-<?php endwhile; ?>
+                <?php endwhile; ?>
+        </section>
 <?php wp_reset_postdata(); // reset the query ?>
 
 
@@ -73,7 +72,6 @@ while($custom_query->have_posts()) : $custom_query->the_post(); ?>
 
 
 		</main><!-- #main -->
-	</div><!-- #primary -->
-
-
+    </div><!-- #primary -->
+    </section>
 <?php get_footer(); ?>

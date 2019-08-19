@@ -7,6 +7,7 @@
 
 get_header(); ?>
 
+	<section class="tag-container" class="category-container">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -42,4 +43,6 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 <?php get_sidebar(); ?>
+
+</section>
 <?php get_footer(); ?>

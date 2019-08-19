@@ -70,19 +70,9 @@ a {
 /* Menus */
 
 // .site-header {
-// 	border-bottom: 1px solid #e1e1e1;
+	
+//     position: fixed;
 // }
-
-.front-banner {
-	width: 100%;
-	height: 100vh;
-	background: 
-	url(../../images/logos/inhabitent-logo-full.svg)no-repeat center top 50%,
-	linear-gradient(to bottom, rgba(0,0,0,0.3) 5%,  rgba(0,0,0,0.3) 100%),
-	url(../../images/home-hero.jpg)no-repeat top;
-	background-size: 40vh, cover, cover;
-	// background-position: center;
-}
 
 
 .site-branding-container {
@@ -94,6 +84,7 @@ a {
 	grid-template-areas:
 	"a b c d e f f f f";
 	padding: 10px 0px 0px 0px;
+
    
 }
 

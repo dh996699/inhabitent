@@ -19,7 +19,7 @@ h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-family:'Novecento Sans Web', sans-serif;
     // letter-spacing: 2px;
-    // text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 /* Copy */
@@ -127,7 +127,9 @@ body {
 	font-family: 'Novecento Sans Web';
 }
 
-// Find Us Page
+// Find Us Page start
+
+.page-id-64 {
 
 .entry-title {
 
@@ -140,6 +142,8 @@ body {
 	font-family:'Novecento Sans Web';
 	font-size: 35px;
 	color: #2f1339;
+	margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 .wpcf7-form {
@@ -172,3 +176,5 @@ body {
 .wpcf7 span {
 	color:red;
 }
+}
+// Find Us Page End
