@@ -21,16 +21,16 @@ get_header(); ?>
 
 				<div class="separation-line"> </div>
 			</header><!-- .page-header -->
-
+		<div class="archive-single-post-item">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php
 					get_template_part( 'template-parts/content' );
 				?>
-
+			<a class="read-more" href="<?php echo get_permalink();?>"> Read More ⟶</a>
 			<?php endwhile; ?>
-
+			</div>
 			<?php the_posts_navigation(); ?>
 
 		<?php else : ?>
@@ -38,7 +38,6 @@ get_header(); ?>
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 		<?php endif; ?>
-		<a class="read-more" href="<?php echo get_permalink();?>"> Read More ⟶</a>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
