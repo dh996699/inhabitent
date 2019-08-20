@@ -72,6 +72,42 @@ get_header(); ?>
                     </div>
 
         </section>
+
+        <section class="front-page-adventures-container">         
+                    
+                    <h2> Latest Adventures </h2>
+        
+                        <div class="front-page-adventures-item"> 
+                            <div class="fp-getting-back-to-nature">
+                                <div class="canoe-girl">
+                                <!-- <img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/canoe-girl.jpg'; ?>" class="advantures-img" alt="canoe girl paddling" /> -->
+                                <a href="#" class="nature-p"> <p> Getting Back to Nature in a Canoe </p> </a>
+                                <a href="#" class="fp-adventures-readmore"> Read More </a>
+                                </div>
+                                
+                            </div>
+
+                            <div class="fp-a-night-at-the-beach">
+                                <!-- <img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/beach-bonfire.jpg'; ?>" class="advantures-img" alt="beach bonfire" /> -->
+                                <a href="#" class="beach-p"> <p> A Night with Friends at the Beach </p> </a>
+                                <a href="#" class="fp-adventures-readmore"> Read More </a>
+                            </div>
+
+                            <div class="fp-view-at-big-mountain">
+                                <!-- <img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/mountain-hikers.jpg'; ?>" class="advantures-img" alt="mountain hikers view the moutain" /> -->
+                                <a href="#" class="moutain-p"> <p> Taking in the View at Big Mountain </p> </a>
+                                <a href="#" class="fp-adventures-readmore"> Read More </a>
+                            </div>
+
+                            <div class="fp-star-gazing">
+                                <!-- <img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/night-sky.jpg'; ?>" class="advantures-img" alt="gazing at night sky" /> -->
+                                <a href="#" class="sky-p"> <p> Star-Gazing at the Night Sky </p></a>
+                                <a href="#" class="fp-adventures-readmore"> Read More </a>
+                            </div>
+                        </div>
+
+        </section>
+
 <?php wp_reset_postdata(); // reset the query ?>
 
 
