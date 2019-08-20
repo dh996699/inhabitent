@@ -13,17 +13,19 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found.' ); ?></h1>
+				<header class="error-page-header">
+					<h1 class="error-page-title"><?php echo esc_html( 'Oops! That page can&rsquo;t be found. Please try again!' ); ?></h1>
 				</header><!-- .page-header -->
 
-				<div class="page-content">
+				<div class="error-page-content">
 					<p><?php echo esc_html( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?' ); ?></p>
 
-					<?php get_search_form(); ?>
-
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
+					<div class="error-search">
+						<?php get_search_form(); ?>
+					</div>
+					<div class="error-widget"
+						<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
+					</div>
 					<?php if ( red_starter_categorized_blog() ) : // Only show the widget if site has multiple categories. ?>
 					<div class="widget widget_categories">
 						<h2 class="widget-title"><?php echo esc_html( 'Most Used Categories' ); ?></h2>
@@ -52,4 +54,5 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>

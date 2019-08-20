@@ -1074,6 +1074,82 @@ body {
 
 // Journal tag page configuration end
 
+// single advanture page configuration ***** Start
+
+	.page-template-single-adventures {
+
+
+		.single-advantures-page-container {
+			height:100%;
+			width:100%;
+			display:flex;
+			justify-content: center;
+			flex-direction: column;
+			flex-grow: 1;
+
+
+		}
+		.single-advantues-img {
+			height:100%;
+			text-align: center;
+		}
+	
+		.single-advantures-info p
+		{
+		width: 900px;    
+		margin-left: auto;
+		margin-right: auto;
+		text-align: left;
+		}
+
+		.single-advantures-info span {
+		font-weight: bold;
+		margin-left: 23vw;
+		text-align: left;
+		text-transform: uppercase;
+		// width: 900px;    
+		// margin-left: auto;
+		// margin-right: auto;
+		}
+	
+		.single-advantures-info h1 {
+			text-align: center;
+			color: #2f1339;
+			font-size: 2rem;
+			margin: 3rem;
+		}
+	
+		#primary {
+			padding-right: 0px;
+		}
+	
+	
+		.entry-title {
+			color:white;
+		}
+	
+	
+		.entry-content {
+			margin: 0;
+			// height: 100vh;
+		}
+	
+		.site-header {
+			position: absolute;
+			width: 100%;
+			padding: 20px;
+			top: 0;
+			left: 0;
+	
+		}
+
+
+
+}
+
+
+// single advanture page configuration ***** End
+
 //  find us configuration start
 
 		.page-id-64 {

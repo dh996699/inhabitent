@@ -81,28 +81,28 @@ get_header(); ?>
                             <div class="fp-getting-back-to-nature">
                                 <div class="canoe-girl">
                                 <!-- <img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/canoe-girl.jpg'; ?>" class="advantures-img" alt="canoe girl paddling" /> -->
-                                <a href="#" class="nature-p"> <p> Getting Back to Nature in a Canoe </p> </a>
-                                <a href="#" class="fp-adventures-readmore"> Read More </a>
+                                <a href="http://localhost:3000/inhabitent/getting-back-to-nature-in-a-canoe/" class="nature-p"> <p> Getting Back to Nature in a Canoe </p> </a>
+                                <a href="http://localhost:3000/inhabitent/getting-back-to-nature-in-a-canoe/" class="fp-adventures-readmore"> Read More </a>
                                 </div>
                                 
                             </div>
 
                             <div class="fp-a-night-at-the-beach">
                                 <!-- <img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/beach-bonfire.jpg'; ?>" class="advantures-img" alt="beach bonfire" /> -->
-                                <a href="#" class="beach-p"> <p> A Night with Friends at the Beach </p> </a>
-                                <a href="#" class="fp-adventures-readmore"> Read More </a>
+                                <a href="http://localhost:8888/inhabitent/a-night-with-friends-at-the-beach/" class="beach-p"> <p> A Night with Friends at the Beach </p> </a>
+                                <a href="http://localhost:8888/inhabitent/a-night-with-friends-at-the-beach/" class="fp-adventures-readmore"> Read More </a>
                             </div>
 
                             <div class="fp-view-at-big-mountain">
                                 <!-- <img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/mountain-hikers.jpg'; ?>" class="advantures-img" alt="mountain hikers view the moutain" /> -->
-                                <a href="#" class="moutain-p"> <p> Taking in the View at Big Mountain </p> </a>
-                                <a href="#" class="fp-adventures-readmore"> Read More </a>
+                                <a href="http://localhost:8888/inhabitent/taking-in-the-view-at-big-mountain/" class="moutain-p"> <p> Taking in the View at Big Mountain </p> </a>
+                                <a href="http://localhost:8888/inhabitent/taking-in-the-view-at-big-mountain/" class="fp-adventures-readmore"> Read More </a>
                             </div>
 
                             <div class="fp-star-gazing">
                                 <!-- <img src="<?php echo get_template_directory_uri() . '/images/adventure-photos/night-sky.jpg'; ?>" class="advantures-img" alt="gazing at night sky" /> -->
-                                <a href="#" class="sky-p"> <p> Star-Gazing at the Night Sky </p></a>
-                                <a href="#" class="fp-adventures-readmore"> Read More </a>
+                                <a href="http://localhost:8888/inhabitent/star-gazing-at-the-night-sky/" class="sky-p"> <p> Star-Gazing at the Night Sky </p></a>
+                                <a href="http://localhost:8888/inhabitent/star-gazing-at-the-night-sky/" class="fp-adventures-readmore"> Read More </a>
                             </div>
                         </div>
 

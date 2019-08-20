@@ -26,6 +26,9 @@
 					if( is_page_template('page-about.php')){
 						echo 'a';
 					};
+					if( is_page_template('single-adventures.php')){
+						echo 'green-header';
+					};
 					if( is_archive('archive-product.php')){
 						echo 'green-header';
 					};
@@ -54,6 +57,10 @@
 
 					if( is_page_template('page-about.php')){
 						$logoClass = 'logo';
+					};
+
+					if( is_page_template('single-adventures.php')){
+						$logoClass = 'logo-green';
 					};
 
 					if( is_archive('archive-product.php')){
