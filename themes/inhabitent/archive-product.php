@@ -65,7 +65,6 @@ get_header(); ?>
 					</header><!-- .entry-header -->
 
 					<div class="entry-content">
-						<!-- TODO get the CFS price and other fields -->
 						<?php // the_excerpt(); ?>
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->

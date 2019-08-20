@@ -197,9 +197,8 @@ body {
 	}
 
 	.fp-journal-item-meta {
-		display: grid;
-		grid-template-rows: repeat(1, 1fr);
-		grid-gap: 10px;
+		position: relative;
+		height: 200px;
 
 	}
 
@@ -214,7 +213,7 @@ body {
 
 	.front-page-journal-item h1 {
 		font-size: 20px;
-		padding-bottom: 10px;
+		padding-bottom: 30px;
 	}
 
 	.front-page-journal-item h1 a {
@@ -234,9 +233,9 @@ body {
 		text-decoration: none;
 		text-transform: uppercase;
 		border-radius: 1;
-		margin-bottom:auto;
-		// width:150px;
-		// position: absolute;
+		bottom: 2rem;
+		position: absolute;
+		margin-top:20px;
 
 	}
 
@@ -249,7 +248,6 @@ body {
 	}
 
 }
-
 
 // Front-page configuration End
 //
@@ -307,11 +305,11 @@ body {
 	.product-img {
 		height:250px;
 		width:auto;
+		border: 1px solid #c8c8c8;
 	}
 
 	.product-entry-title a {
 		color:black;
-		text-transform: capitalize;
 	}
 
 	.product-infomation {
@@ -378,7 +376,67 @@ body {
 
 }
 
-// Single Product Page Configuration **** End
+// Single Product Page Configuration End
+
+
+// Product Type Page Configuration **** Start
+
+.taxonomy-product-container{
+	margin: auto;
+	width: 1120px;
+	
+}
+
+.taxonomy-page-header {
+	text-align: center;
+	border-bottom: 1px dashed #c8c8c8;
+}
+
+.taxonomy-page-header h1{
+	font-size: 38px;
+}
+
+.taxonomy-product-item {
+	display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+    margin-bottom: 2rem;
+
+}
+
+.taxonomy-product-img {
+	height:250px;
+	width:auto;
+
+}
+
+.taxonomy-product-infomation {
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+	border: 1px solid #c8c8c8;
+	padding: .75rem 1rem;
+	height: 52px;
+
+
+}
+
+.taxonomy-product-infomation a {
+	color: black;
+}
+
+.taxonomy-product-entry-title a {
+	color:black;
+}
+
+
+.taxonomy-prod-price {
+
+
+}
+
+// Product Type Page Configuration End
+
 
 
 //about page configuration  **** start
@@ -438,6 +496,7 @@ body {
 }
 
 //about page configuration end
+
 
 // Journal page configuration start
 
@@ -709,7 +768,55 @@ body {
 			color: gray;
 		}
 
+	// Comment Form Configuration ***** Start
+
+		.comment-form-comment textarea,
+		.comment-form-author input,
+		.comment-form-email input,
+		.comment-form-url input
+		{
+			color: #666;
+			background-color: #f4f4f4;
+			border: 1px solid #e1e1e1;
+			border-radius: 0;
 		}
+
+		.comment-form-comment label,
+		.comment-form-author label,
+		.comment-form-email label,
+		.comment-form-url label
+		
+		{
+			color: #2f1339;
+			display: block;
+			font-family: Novecento Sans Web,sans-serif;
+			font-size: 18px;
+			margin-bottom: 1rem;
+			text-transform: uppercase;
+
+		}
+
+		.comment-form-author span,
+		.comment-form-email span
+		{
+			color: #d99054;
+		}
+
+
+		.submit {
+			background: #248a83;
+			border: none;
+			border-radius: 0;
+			color: #fff;
+			font-family: Novecento Sans Web,sans-serif;
+			font-size: 1rem;
+			padding: .75rem 1.5rem;
+			text-decoration: none;
+			text-transform: uppercase;
+
+		}
+
+}
 
 // Journal page-single configuration end
 
