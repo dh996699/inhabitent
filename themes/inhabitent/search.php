@@ -6,12 +6,12 @@
  */
 
 get_header(); ?>
-
+<div class="search-container">
 	<section id="search-primary" class="search-content-area">
 		<main id="main" class="site-main" role="main">
 		
 		<?php if ( have_posts() ) : ?>
-		<div class="search-container">
+		
 			<header class="search-page-header">
 				<h1 class="search-page-title"><?php printf( esc_html( 'Search Results for: %s' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header><!-- .page-header -->
@@ -21,7 +21,7 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+			<article class="search-article" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<header class="search-entry-header">
 						<?php the_title( sprintf( '<h2 class="search-entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
 
@@ -33,8 +33,11 @@ get_header(); ?>
 						<div class="search-entry-summary">
 						<?php the_excerpt(); ?>
 						</div><!-- .entry-summary -->
-			</article><!-- #post-## -->
 
+						<a class="search-read-more" href="<?php echo get_permalink();?>"> Read More ⟶</a>
+
+			</article><!-- #post-## -->
+			
 			<?php endwhile; ?>
 
 			<?php red_starter_numbered_pagination(); ?>
@@ -48,7 +51,8 @@ get_header(); ?>
 		</main><!-- #main -->
 		
 	</section><!-- #primary -->
-	</div>
-<?php get_sidebar(); ?>
+	
+	<?php get_sidebar(); ?>
+</div>
 
 <?php get_footer(); ?>
