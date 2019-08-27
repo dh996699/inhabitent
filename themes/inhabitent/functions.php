@@ -98,6 +98,7 @@ function inhabitent_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'inhabitent_scripts' );
 
+
 /**
  * Custom template tags for this theme.
  */
@@ -107,15 +108,3 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
-
-// //Body Class for Page Slug
-// function add_slug_body_class( $classes ) {
-// 	if (is_single() ) {
-// 	global $post;
-// 	if ( isset( $post ) ) {
-// 	$classes[] = $post->post_type . ‘-slug-‘ . $post->post_name;
-// 	}
-// 	return $classes;
-// 	}
-// 	}
-// 	add_filter( ‘body_class’, ‘add_slug_body_class’ );

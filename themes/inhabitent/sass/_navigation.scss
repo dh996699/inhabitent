@@ -80,9 +80,9 @@ a {
 	margin:auto;
 	height: 50px;
 	display:grid;
-	grid-template-columns: repeat(9, 1fr);
+	grid-template-columns: repeat(11, 1fr);
 	grid-template-areas:
-	"a b c d e f f f f";
+	"a b c d e f f f f f f";
 	padding: 10px 0px 0px 0px;
 
    
@@ -133,7 +133,7 @@ a {
 
 .main-navigation {
 	clear: both;
-	// display: flex;
+	display: flex;
 	width: 100%;
 	grid-area: f;
 
@@ -202,7 +202,10 @@ a {
 	.current-menu-item > a,
 	.current_page_ancestor > a {
 	}
+	
 }
+
+
 
 /* Small menu. */
 .menu-toggle,
@@ -239,3 +242,61 @@ a {
 		width: 50%;
 	}
 }
+
+
+//searh icon
+
+
+.search-form .form-group {
+	float: right !important;
+	transition: all 0.50s, border-radius 0s;
+	width: 50px;
+	height: 32px;
+	background-color: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	border-radius: 25px;
+	border: 1px solid #ccc;
+	
+  }
+  .search-form .form-group input.form-control {
+	padding-right: 20px;
+	padding-left: 20px;
+	border: 0 none;
+	background: transparent;
+	box-shadow: none;
+	display:block;
+  }
+  .search-form .form-group input.form-control::-webkit-input-placeholder {
+	display: none;
+  }
+  .search-form .form-group input.form-control:-moz-placeholder {
+	/* Firefox 18- */
+	display: none;
+  }
+  .search-form .form-group input.form-control::-moz-placeholder {
+	/* Firefox 19+ */
+	display: none;
+  }
+  .search-form .form-group input.form-control:-ms-input-placeholder {
+	display: none;
+  }
+  .search-form .form-group:hover,
+  .search-form .form-group.hover {
+	width: 100%;
+	border-radius: 4px 25px 25px 4px;
+  }
+  .search-form .form-group span.form-control-feedback {
+	position: absolute;
+	top: -1px;
+	right: -2px;
+	z-index: 2;
+	display: block;
+	width: 39px;
+	height: 39px;
+	line-height: 34px;
+	text-align: center;
+	color: #3596e0;
+	left: initial;
+	font-size: 16px;
+  }
+  
