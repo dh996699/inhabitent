@@ -58,7 +58,39 @@
   }
 
   /**
- * Sample @font-face rules for Novocento
+ * Sample @font-face rules for Novecento
+ * 
+ * Usage:
+ * Copy these rules into the appropriate Sass partial and update the file paths as needed
+ *
+*/
+
+@font-face {
+    font-family: 'Novecento Sans Web';
+    src: url('../../fonts/Novecento/novecentosanswide-normal-webfont.eot');
+    src: url('../../fonts/Novecento/novecentosanswide-normal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/Novecento/novecentosanswide-normal-webfont.woff2') format('woff2'),
+         url('../../fonts/Novecento/novecentosanswide-normal-webfont.woff') format('woff'),
+         url('../../fonts/Novecento/novecentosanswide-normal-webfont.ttf') format('truetype'),
+         url('../../fonts/Novecento/novecentosanswide-normal-webfont.svg#Novecento_sans_widenormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Novecento Sans Web';
+    src: url('../../fonts/Novecento/novecentosanswide-demibold-webfont.eot');
+    src: url('../../fonts/Novecento/novecentosanswide-demibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../fonts/Novecento/novecentosanswide-demibold-webfont.woff2') format('woff2'),
+         url('../../fonts/Novecento/novecentosanswide-demibold-webfont.woff') format('woff'),
+         url('../../fonts/Novecento/novecentosanswide-demibold-webfont.ttf') format('truetype'),
+         url('../../fonts/Novecento/novecentosanswide-demibold-webfont.svg#Novecento_sans_widedemibold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+/**
+ * Sample @font-face rules for Novecento
  * 
  * Usage:
  * Copy these rules into the appropriate Sass partial and update the file paths as needed
@@ -85,38 +117,6 @@
          url('../../fonts/Novecento/novecentosanswide-demibold-webfont.woff') format('woff'),
          url('../../fonts/Novecento/novecentosanswide-demibold-webfont.ttf') format('truetype'),
          url('../../fonts/Novecento/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold') format('svg');
-    font-weight: bold;
-    font-style: normal;
-  }
-
-/**
- * Sample @font-face rules for Novocento
- * 
- * Usage:
- * Copy these rules into the appropriate Sass partial and update the file paths as needed
- *
-*/
-
-@font-face {
-    font-family: 'Novecento Sans Web';
-    src: url('../../fonts/Novecento/novecentosanswide-normal-webfont.eot');
-    src: url('../../fonts/Novecento/novecentosanswide-normal-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/Novecento/novecentosanswide-normal-webfont.woff2') format('woff2'),
-         url('../../fonts/Novecento/novecentosanswide-normal-webfont.woff') format('woff'),
-         url('../../fonts/Novecento/novecentosanswide-normal-webfont.ttf') format('truetype'),
-         url('../../fonts/Novecento/novecentosanswide-normal-webfont.svg#novecento_sans_widenormal') format('svg');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  @font-face {
-    font-family: 'Novecento Sans Web';
-    src: url('../../fonts/Noecento/novecentosanswide-demibold-webfont.eot');
-    src: url('../../fonts/Noecento/novecentosanswide-demibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../../fonts/Noecento/novecentosanswide-demibold-webfont.woff2') format('woff2'),
-         url('../../fonts/Noecento/novecentosanswide-demibold-webfont.woff') format('woff'),
-         url('../../fonts/Noecento/novecentosanswide-demibold-webfont.ttf') format('truetype'),
-         url('../../fonts/Noecento/novecentosanswide-demibold-webfont.svg#novecento_sans_widedemibold') format('svg');
     font-weight: bold;
     font-style: normal;
   }

@@ -32,27 +32,21 @@
 					if( is_archive('archive-product.php')){
 						echo 'green-header';
 					};
-
 					if( is_home()){
 						echo 'green-header';
 					};
-
 					if( is_page('find-us')){
 						echo 'green-header';
 					};
-
 					if( is_single('')){
 						echo 'green-header';
 					};
-
-					if( is_404('')){
-						echo 'green-header';
-					};
-
 					if( is_search('')){
 						echo 'green-header';
 					};
-
+					if( is_404('')){
+						echo 'green-header';
+					};
 					?>" 
 					role="banner">
 			<div class="site-branding-container">
@@ -62,35 +56,28 @@
 					if(is_front_page()){ 
 						$logoClass = 'logo';
 					};
-
 					if( is_page_template('page-about.php')){
 						$logoClass = 'logo';
 					};
-
 					if( is_page_template('single-adventures.php')){
 						$logoClass = 'logo-green';
 					};
-
 					if( is_archive('archive-product.php')){
 						$logoClass = 'logo-green';
 					};
-
 					if( is_home()){
 						$logoClass = 'logo-green';
 					};
-
 					if( is_page('find-us')){
 						$logoClass = 'logo-green';
 					};
-
 					if( is_single('')){
 						$logoClass = 'logo-green';
 					};
-					if( is_404('')) {
+					if( is_search('')){
 						$logoClass = 'logo-green';
 					};
-
-					if( is_search('')) {
+					if( is_404('')){
 						$logoClass = 'logo-green';
 					};
 				?>
@@ -106,23 +93,8 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-
-
-					<div class="row">
-        	<div class="col-md-4 col-md-offset-3">
-            <form action="" class="search-form">
-                <div class="form-group has-feedback">
-            		<label for="search" class="sr-only">Search</label>
-            		<input type="text" class="form-control" name="search" id="search" placeholder="search">
-              		<span class="glyphicon glyphicon-search form-control-feedback"></span>
-            	</div>
-            </form>
-        </div>
-    </div>
-</div>
-				
+					<div class="search-header"><?php get_search_form(); ?></div>
 				</nav><!-- #site-navigation -->
-		
 			</div>
 			</header><!-- #masthead -->
 			<div class="page-container">
