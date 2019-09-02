@@ -1,7 +1,7 @@
 /*!
-Theme Name: Inhabitent Theme
+Theme Name: RED Starter Theme
 Theme URI: http://underscores.me/
-Author: David Huynh
+Author: RED Academy
 Author URI: http://www.redacademy.com
 Description: A WordPress starter theme for RED Academy students.
 Version: 1.0.0
@@ -1751,8 +1751,7 @@ body {
   margin-bottom: 1rem;
   padding-bottom: 1rem; }
 
-.page-template-single-adventures .single-advantures-page-container {
-  height: 100%;
+.single-latest_adventures .single-advantures-page-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1768,38 +1767,38 @@ body {
       -ms-flex-positive: 1;
           flex-grow: 1; }
 
-.page-template-single-adventures .single-advantues-img {
-  height: 100%;
-  text-align: center; }
+.single-latest_adventures .single-advantues-img img {
+  height: auto;
+  max-width: 100%; }
 
-.page-template-single-adventures .single-advantures-info p {
+.single-latest_adventures .single-advantures-info {
   width: 900px;
   margin-left: auto;
   margin-right: auto;
   text-align: left; }
 
-.page-template-single-adventures .single-advantures-info span {
+.single-latest_adventures .single-advantures-info span {
   font-weight: bold;
-  margin-left: 23vw;
   text-align: left;
   text-transform: uppercase; }
 
-.page-template-single-adventures .single-advantures-info h1 {
+.single-latest_adventures .single-advantures-info h1 {
   text-align: center;
   color: #2f1339;
   font-size: 2rem;
   margin: 3rem; }
 
-.page-template-single-adventures #primary {
+.single-latest_adventures #primary {
   padding-right: 0px; }
 
-.page-template-single-adventures .entry-title {
-  color: white; }
+.single-latest_adventures .entry-title {
+  color: white;
+  max-width: 800px; }
 
-.page-template-single-adventures .entry-content {
+.single-latest_adventures .entry-content {
   margin: 0; }
 
-.page-template-single-adventures .site-header {
+.single-latest_adventures .site-header {
   position: absolute;
   width: 100%;
   padding: 20px;

@@ -1079,25 +1079,29 @@ body {
 
 // single advanture page configuration ***** Start
 
-	.page-template-single-adventures {
+	.single-latest_adventures {
 
 
 		.single-advantures-page-container {
-			height:100%;
 			width:100%;
 			display:flex;
 			justify-content: center;
 			flex-direction: column;
 			flex-grow: 1;
+			// margin: auto;
+			// width: 1120px;
+			// margin-left: auto;
+			// margin-right: auto;
+			// align-items: center;
 
 
 		}
-		.single-advantues-img {
-			height:100%;
-			text-align: center;
+		.single-advantues-img img{
+			height: auto;
+			max-width: 100%;
 		}
 	
-		.single-advantures-info p
+		.single-advantures-info
 		{
 		width: 900px;    
 		margin-left: auto;
@@ -1107,12 +1111,8 @@ body {
 
 		.single-advantures-info span {
 		font-weight: bold;
-		margin-left: 23vw;
 		text-align: left;
 		text-transform: uppercase;
-		// width: 900px;    
-		// margin-left: auto;
-		// margin-right: auto;
 		}
 	
 		.single-advantures-info h1 {
@@ -1129,6 +1129,7 @@ body {
 	
 		.entry-title {
 			color:white;
+			max-width: 800px;
 		}
 	
 	

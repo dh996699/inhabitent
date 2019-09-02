@@ -26,6 +26,9 @@
 					if( is_page_template('page-about.php')){
 						echo 'a';
 					};
+					if( is_single('single-latest_adventures.php')){
+						echo 'a';
+					};
 					if( is_page_template('single-adventures.php')){
 						echo 'green-header';
 					};
