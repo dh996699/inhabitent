@@ -1188,9 +1188,16 @@ body {
   background-color: transparent;
   color: #fff;
   padding: 10px;
-  margin-top: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   display: block;
   line-height: 3rem; }
+
+.page-id-125 .fp-a-night-at-the-beach p,
+.page-id-125 .fp-view-at-big-mountain p,
+.page-id-125 .fp-star-gazing p {
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
 
 .page-id-125 .nature-p:hover,
 .page-id-125 .beach-p:hover,
@@ -1220,7 +1227,8 @@ body {
   text-transform: uppercase;
   border-radius: 1;
   margin-bottom: 10rem;
-  margin-left: 10px; }
+  margin-left: 10px;
+  margin-top: 1rem; }
 
 .post-type-archive-product .archive-product-container {
   display: grid;
